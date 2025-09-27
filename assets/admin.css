@@ -1,0 +1,247 @@
+/* Sumsub KYC Admin Styles */
+.wrap.sumsub-settings {
+    max-width: 1200px;
+}
+
+.sumsub-card {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.sumsub-section-title {
+    background: #f8f9fa;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #23282d;
+    display: flex;
+    align-items: center;
+}
+
+.sumsub-section-title.dashicons-before::before {
+    margin-right: 10px;
+    color: #007cba;
+}
+
+.sumsub-settings .form-table {
+    margin: 0;
+    width: 100%;
+}
+
+.sumsub-settings .form-table th {
+    width: 250px;
+    font-weight: 600;
+    padding: 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.sumsub-settings .form-table td {
+    padding: 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.sumsub-settings input[type="text"],
+.sumsub-settings input[type="number"],
+.sumsub-settings textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sumsub-settings input[type="text"]:focus,
+.sumsub-settings input[type="number"]:focus,
+.sumsub-settings textarea:focus {
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0,124,186,0.2);
+    outline: none;
+}
+
+.sumsub-settings textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.sumsub-settings .submit {
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #e1e1e1;
+    text-align: right;
+}
+
+.sumsub-dashboard {
+    max-width: 1400px;
+}
+
+.sumsub-dashboard h1 {
+    margin-bottom: 20px;
+    color: #23282d;
+    font-size: 24px;
+}
+
+.sumsub-dashboard .tablenav {
+    margin-bottom: 20px;
+}
+
+.sumsub-dashboard .wp-list-table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #e1e1e1;
+}
+
+.sumsub-dashboard .wp-list-table thead th {
+    background: #007cba;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 10px;
+    border: none;
+}
+
+.sumsub-dashboard .wp-list-table tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.sumsub-dashboard .wp-list-table tbody tr:hover {
+    background: #e3f2fd;
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
+.sumsub-dashboard .wp-list-table td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.kyc-status {
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.status-completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.status-not-initiated {
+    background: #e2e3e5;
+    color: #383d41;
+}
+
+.blocked-status {
+    font-weight: 600;
+}
+
+.blocked-yes {
+    color: #dc3545;
+}
+
+.blocked-no {
+    color: #28a745;
+}
+
+.sumsub-dashboard .button {
+    margin-right: 5px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.sumsub-send-reminder {
+    background: #007cba;
+    color: #fff;
+    border-color: #007cba;
+}
+
+.sumsub-send-reminder:hover {
+    background: #005a87;
+    border-color: #005a87;
+}
+
+.sumsub-initiate-kyc {
+    background: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+
+.sumsub-initiate-kyc:hover {
+    background: #1e7e34;
+    border-color: #1e7e34;
+}
+
+.sumsub-block-user {
+    background: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+}
+
+.sumsub-block-user:hover {
+    background: #c82333;
+    border-color: #c82333;
+}
+
+.sumsub-unblock-user {
+    background: #ffc107;
+    color: #212529;
+    border-color: #ffc107;
+}
+
+.sumsub-unblock-user:hover {
+    background: #e0a800;
+    border-color: #e0a800;
+}
+
+.sumsub-scan-temp-emails {
+    background: #6c757d;
+    color: #fff;
+    border-color: #6c757d;
+    padding: 8px 16px;
+}
+
+.sumsub-scan-temp-emails:hover {
+    background: #545b62;
+    border-color: #545b62;
+}
+
+.sumsub-dashboard .tablenav-pages {
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .sumsub-dashboard .wp-list-table {
+        font-size: 12px;
+    }
+
+    .sumsub-dashboard .wp-list-table td,
+    .sumsub-dashboard .wp-list-table th {
+        padding: 8px 5px;
+    }
+
+    .sumsub-dashboard .button {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
